@@ -5,7 +5,7 @@ begin try
 set nocount, xact_abort on
 
 if isnull(@CustomerName,'') = ''
-	throw 50000, 'Invalid parameter', 1
+	throw 50000, 'Invalid parameter dev dev', 1
 
 insert into dbo.Customers (CustomerName)
 values (@CustomerName)
